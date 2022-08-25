@@ -1,16 +1,26 @@
 # myapp
 
-A new Flutter project.
+E-commerce app with online payment integration.
 
-## Getting Started
+<img width="469" alt="Screen Shot 2022-08-25 at 08 57 28" src="https://user-images.githubusercontent.com/81049151/186566627-05320a3e-d8c4-49f4-8476-1637d7731a8a.png">
+<img width="469" alt="Screen Shot 2022-08-25 at 08 58 21" src="https://user-images.githubusercontent.com/81049151/186566641-432f5cd7-8e7e-4b88-92f4-49ecb74c8051.png">
+<img width="425" alt="Screen Shot 2022-08-25 at 09 13 02" src="https://user-images.githubusercontent.com/81049151/186568077-c442d64b-7ec8-4c29-9b51-bd7ff7d4ddf7.png">
+<img width="469" alt="Screen Shot 2022-08-25 at 08 58 30" src="https://user-images.githubusercontent.com/81049151/186568061-d899af37-abdc-4387-8d7a-0c0e14f8981a.png">
+<img width="469" alt="Screen Shot 2022-08-25 at 09 11 31" src="https://user-images.githubusercontent.com/81049151/186568075-b6f7d1aa-9599-41b3-965d-82be2257b491.png">
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Processes
+* Flutter Framework
+* Firebase for storing database
+* Provider for statemanagements
+* Dart
+
+## Next Project
+* Chatt app with flutter firebase.
+
+## Author
+* Miroj Chamling
+
+
