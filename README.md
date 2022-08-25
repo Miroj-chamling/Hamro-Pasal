@@ -17,7 +17,7 @@ E-commerce app with online payment integration.
 * Provider for statemanagements
 * Dart
 
-## Next Porject
+## Next Project
 * Chatt app with flutter firebase.
 
 ## Author
