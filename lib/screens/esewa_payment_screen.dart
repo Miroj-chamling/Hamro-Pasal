@@ -46,7 +46,7 @@ class _EsewaPaymentScreenState extends State<EsewaPaymentScreen> {
     final orderData = Provider.of<Orders>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('test'),
+        title: Text('Payment'),
       ),
       body: WebView(
         initialUrl: "about:blank",

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/providers/cart.dart' show Cart;
 import 'package:myapp/providers/orders.dart';
-import 'package:myapp/screens/orders_screen.dart';
+
+import 'package:myapp/providers/products.dart';
+
 //we need the information only from the Cart from the providers and dont need information from the cartItem of the providers
 import '../Components/cart_item.dart';
 import 'package:provider/provider.dart';
@@ -62,7 +64,8 @@ class CartScreen extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                        child: ListView.builder(
+                          child: Consumer<Products>(builder: (ctx, pData, _) {
+                        return ListView.builder(
                           itemCount: cart.items.length,
                           itemBuilder: (context, index) => CartItem(
                             cart.items.values.toList()[index].id,
@@ -70,9 +73,10 @@ class CartScreen extends StatelessWidget {
                             cart.items.values.toList()[index].price,
                             cart.items.values.toList()[index].quantity,
                             cart.items.values.toList()[index].title,
+                            pData.items[index].imageUrl,
                           ),
-                        ),
-                      ),
+                        );
+                      })),
                     ],
                   ),
           ),

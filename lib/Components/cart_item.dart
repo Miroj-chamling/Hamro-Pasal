@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/providers/cart.dart';
+import 'package:myapp/providers/products.dart';
 import 'package:provider/provider.dart';
 
 class CartItem extends StatelessWidget {
@@ -9,13 +10,14 @@ class CartItem extends StatelessWidget {
   final double price;
   final int quantity;
   final String title;
-
+  final String prodImg;
   CartItem(
     this.id,
     this.productId,
     this.price,
     this.quantity,
     this.title,
+    this.prodImg,
   );
 
   @override
@@ -64,16 +66,11 @@ class CartItem extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: ListTile(
             leading: CircleAvatar(
-              child: Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: FittedBox(
-                  child: Text('\$${price.toStringAsFixed(2)}'),
-                ),
-              ),
+              backgroundImage: NetworkImage(prodImg),
             ),
             title: Text(title),
             subtitle:
-                Text('Total : \$${(price * quantity).toStringAsFixed(2)}'),
+                Text('Total : Rs ${(price * quantity).toStringAsFixed(2)}'),
             trailing: Text('$quantity X'),
           ),
         ),

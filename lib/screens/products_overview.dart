@@ -3,6 +3,7 @@ import 'package:myapp/Components/app_drawer.dart';
 import 'package:myapp/Components/badge.dart';
 import 'package:myapp/Components/product_grid.dart';
 import 'package:myapp/providers/cart.dart';
+import 'package:myapp/providers/product.dart';
 import 'package:myapp/providers/products.dart';
 import 'package:myapp/screens/cart_screen.dart';
 import 'package:provider/provider.dart';
