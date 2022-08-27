@@ -15,6 +15,7 @@ E-commerce app with online payment integration.
 * Flutter Framework
 * Firebase for storing database
 * Provider for statemanagements
+* Eswea Epay
 * Dart
 
 ## Next Project
